@@ -1,0 +1,23 @@
+{
+  "name": "jumpstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoatedCastles/jumpstart.git"
+  },
+  "author": "Garrett Holmes, Jimmy Stevenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoatedCastles/jumpstart/issues"
+  },
+  "homepage": "https://github.com/MoatedCastles/jumpstart#readme",
+  "dependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
