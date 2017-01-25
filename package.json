@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/MoatedCastles/jumpstart#readme",
   "dependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "webpack": "^1.14.0",
   }
 }
