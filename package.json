@@ -23,6 +23,6 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "webpack": "^1.14.0",
+    "webpack": "^1.14.0"
   }
 }
