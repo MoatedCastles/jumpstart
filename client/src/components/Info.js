@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-class App extends Component {
+import NavBar from './navbar';
+
+class Info extends Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      greeting: 'Hello there!'
+      greeting: 'I\'m in Info component!'
     }
   }
 
   render() {
     return (
-      <div className="container-fluid">
+      <div className="info">
+        <NavBar />
         {this.state.greeting}
       </div>
     )
   }
 }
 
-export default App;
+export default Info;
