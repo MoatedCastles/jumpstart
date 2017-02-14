@@ -1,6 +1,6 @@
 module.exports = {
   entry: [
-    './src/index.js'
+    './client/index.js'
   ],
   output: {
     path: __dirname,
@@ -17,7 +17,7 @@ module.exports = {
     }]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   devServer: {
     historyApiFallback: true,
