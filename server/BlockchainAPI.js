@@ -1,7 +1,7 @@
 //import http from 'http';
 import request from 'request';
 import bitcoin from 'bitcoinjs-lib';
-import bip32utils from 'bit32-utils';
+import bip32utils from 'bip32-utils';
 import dbAPI from 'dbAPI';
 
 const PUBLIC_SEED = '03b748b86da220a7737e93f0e025cbd7fb23f0bf815afbd366b33d9311e18316ef';
