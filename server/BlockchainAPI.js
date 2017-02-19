@@ -33,19 +33,18 @@ var getBTCPrice = function(){
 	});
 };
 
-
-// async function
+// [Generates address, checks for no unspent outputs, return promise!]
 var getNewAddress = function(){
 	// need to get real transaction count from db
 	var index = dbAPI.getTransactionCount();
 	var hdNode = bitcoin.HDNode.fromSeedHex(PUBLIC_SEED);
 	var chain = new bip32utils.Chain(hdNode,index);
 	var address = chain.get();
-	return checkUnused(address);
+	return checkUnused(address); // this returns a promise
 };
 
 var createBitcoinURI = function(address,amount){
-	return `bitcoin:${address}?amount=${parseInt(amount)}&label=lounge`;
+	return `bitcoin:${address}?amount=${parseInt(amount)}&label=lounge&message=United_Club_pass_purchase`;
 };
 
 

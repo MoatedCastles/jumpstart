@@ -11,7 +11,10 @@ import uuidv4 from 'uuidv4';
 const consoleLogError = error => console.log(error);
 
 let app = express();
+
 app.use(cookieParser());
+app.use(bodyParser());
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.get('/', (req,res) => {
 	res.end('Current UUID: '+ JSON.stringify(req.cookies.uuid));
@@ -24,7 +27,7 @@ app.get('/uuid', (req,res) => {
 });
 
 app.get('/random', (req,res) => {
-	BlockchainAPI.unusedAddress().then(address=>{
+	BlockchainAPI.getNewAddress().then(address=>{
 		res.end(address);
 	}).catch(error=> {
 		res.end(String(error));
@@ -40,6 +43,13 @@ app.get('/buy/:amount', (req,res) => {
 			// Send  { btcURI, price, address, token } as response
 
 		}).catch(consoleLogError)
+	}).catch(consoleLogError);
+});
+
+app.post('/addCard', (req,res) => {
+	// { image: { frontData, rearData }, expiration_date}
+	dbAPI.addCard(req.body.card).then(success=>{
+		res.end('Card data added to database.')
 	}).catch(consoleLogError);
 });
 
