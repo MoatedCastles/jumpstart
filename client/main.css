@@ -19,3 +19,13 @@
 .steve {
   color: white;
 }
+
+.info {
+  position: absolute;
+  padding-top: 200px;
+}
+
+.home {
+  position: absolute;
+  padding-top: 200px;
+}

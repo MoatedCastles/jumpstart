@@ -14,14 +14,13 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div className="nav-bar">
-        <div className="nav-bar-item">
+      <nav className="navbar navbar-inverse navbar-fixed-top">
+        <div className="container">
           <Link className="steve" to="/">Home</Link>
-        </div>
-        <div className="nav-bar-item">
+
           <Link className="steve" to="/about">Info</Link>
         </div>
-      </div>
+      </nav>
     )
   }
 }
