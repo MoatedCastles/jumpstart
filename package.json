@@ -20,15 +20,18 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-preset-stage-1": "^6.22.0",
-    "bcoin": "^1.0.0-beta",
+    "bip32-utils": "^0.9.1",
+    "bitcoinjs-lib": "^2.3.0",
     "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.1",
     "http": "0.0.0",
     "nodemon": "^1.11.0",
     "path": "^0.12.7",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "^3.0.2"
+    "react-router": "^3.0.2",
+    "uuidv4": "^0.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
