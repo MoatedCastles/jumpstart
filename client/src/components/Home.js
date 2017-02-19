@@ -16,6 +16,8 @@ class Home extends Component {
     return (
       <div className="home">
         <NavBar />
+        <br />
+        Sup dude!
         {this.state.greeting}
       </div>
     )
